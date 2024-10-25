@@ -117,16 +117,16 @@ if st.button("Predict"):
     data_array = np.array([list(data.values())])
 
     # Load the model from Google Drive
-    model_file_id = '1pnWNdNT8RSRxSz5XtzjeGOCIAOaCW-xj'
+    model_file_id = '1ipYor15saV8MAvj_ZhmmU6JPLX5ZAevR'
     model_content = download_file_from_google_drive(model_file_id)
 
     if model_content:
         # Save the model locally to Streamlit's local file system
-        save_model_locally(model_content, "loan_model.pkl")
+        save_model_locally(model_content, "model.pkl")
 
         # Load the model from the locally saved file
         try:
-            with open("loan_model.pkl", "rb") as f:
+            with open("model.pkl", "rb") as f:
                 model = pickle.load(f)
 
             # Make a prediction
