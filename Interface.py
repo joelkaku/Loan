@@ -107,10 +107,7 @@ if st.button("Predict"):
         "Loan Amount": loan_amount,
         "Loan Term": loan_term,
         "Credit History": credit_history_encoded,
-        "Property Area": property_area_encoded,
-        "Income-to-Loan Ratio": income_to_loan_ratio,
-        "Total Income": total_income,
-        "Income per Term": income_per_term
+        "Property Area": property_area_encoded
     }
     
     # Convert the data dictionary to a 2D array for model prediction
