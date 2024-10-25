@@ -126,7 +126,7 @@ if st.button("Predict"):
 
         # Load the model from the locally saved file
         try:
-            with open("loan_model.pkl", "rb") as f:
+            with open("model.pkl", "rb") as f:
                 model = pickle.load(f)
 
             # Make a prediction
